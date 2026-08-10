@@ -1,0 +1,16 @@
+//Q1: Write a program to input two numbers and display their sum.
+#include<stdio.h>
+int main()
+{
+     int n,m;
+     int s;
+     scanf("%d%d",&n,&m);
+     s=n+m;
+     printf("sum is %d",s);
+     return 0
+}
+
+
+
+
+
