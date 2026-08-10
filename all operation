@@ -1,0 +1,17 @@
+//Q2: Write a program to input two numbers and display their sum, difference, product, and quotient.
+#include <stdio.h>
+int main(void)
+{
+   int one, two, s, q, m;
+   s = one+two
+   q = one/two
+   m = one*two
+   printf("Enter first no: ");
+   scanf("%d", &one);
+   printf("Enter second no:");
+   scanf("%d", &two);
+   printf("The addition of %d and %d is %d", one, two, s);
+   printf("The division of %d divided by %d is %d", one, two, q);
+   printf("the multiplication of %d and %d is %d", &one, &two, m);
+   return 0;
+}
