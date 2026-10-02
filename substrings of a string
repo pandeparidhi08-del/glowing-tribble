@@ -1,0 +1,29 @@
+/*Q100: Print all sub-strings of a string.
+
+Sample Test Cases:
+Input 1:
+abc
+Output 1:
+a,ab,abc,b,bc,c
+
+*/
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string s;
+    cin >> s;
+
+    bool first = true;
+    for (int start = 0; start < static_cast<int>(s.size()); ++start) {
+        for (int end = start + 1; end <= static_cast<int>(s.size()); ++end) {
+            if (!first) cout << ',';
+            cout << s.substr(start, end - start);
+            first = false;
+        }
+    }
+
+    cout << '\n';
+    return 0;
+}
